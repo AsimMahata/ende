@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ende"
+version = "1.0.0"
+description = "High-security file encryption & decryption CLI tool with double encryption, auto-detection, and history logging."
+readme = "README.md"
+authors = [
+    { name = "asim" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "cryptography>=41.0.0"
+]
+keywords = ["encryption", "decryption", "cli", "security", "aes-256-gcm", "ende"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Security :: Cryptography",
+    "Environment :: Console"
+]
+
+[project.scripts]
+ende = "ende.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ende*"]
