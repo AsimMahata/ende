@@ -1,7 +1,6 @@
 # ende
 
 > **High-Security File Encryption & Decryption CLI**  
-> **Author:** asim  
 > **Format:** `.ende`  
 
 `ende` is a modern, fast, and cryptographically sound CLI application that converts any file into an authenticated encrypted `.ende` container and seamlessly decrypts it back to its original state.
@@ -83,7 +82,7 @@ ende history
 Output:
 ```
 ============================== ENDE HISTORY LOG ==============================
-Author: asim  |  Total records: 3  |  Log: ~/.ende/history.json
+Total records: 3  |  Log: ~/.ende/history.json
 +----+---------------------+----------------+--------------------+--------------------+--------+---------+
 | ID | Timestamp           | Action         | Source             | Target             | Layers | Status  |
 +----+---------------------+----------------+--------------------+--------------------+--------+---------+
@@ -128,9 +127,4 @@ ende financial_records.xlsx --shred
 | `-s, --shred` | Securely wipe original file after operation |
 | `-f, --force` | Overwrite destination file without confirmation |
 | `--no-compress` | Disable zlib compression before encryption |
-| `-v, --version` | Display version and author information |
-
----
-
-## 👨‍💻 Author
-**asim**
+| `-v, --version` | Display version number |
