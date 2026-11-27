@@ -1,8 +1,5 @@
 # ende
 
-> **High-Security File Encryption & Decryption CLI**  
-> **Format:** `.ende`  
-
 `ende` is a modern, fast, and cryptographically sound CLI application that converts any file into an authenticated encrypted `.ende` container and seamlessly decrypts it back to its original state.
 
 ---
